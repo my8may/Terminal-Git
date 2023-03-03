@@ -1,0 +1,223 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone
+ 6. Внутри локального JSON создать файл “new.json”.
+touch new.json
+ 7. Добавить файл под гит.
+git add .
+ 8. Закоммитить файл.
+git commit -am "add new.json"
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+vim new.json
+{
+	'FIO':'Korovina Marina Sergeevna',
+	'age': 21,
+	'pets': 0,
+	'food': ['melon', 'fish', 'beef'],
+	'futureSalary': 5000
+
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+git add .
+git commit -am "add description new.json"
+git push
+ 12. Создать файл preferences.json
+Touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+
+vim preferences.json
+{
+	'film':'Requiem for a Dream',
+	'serial': 'Breaking Bad',
+	'food':['melon', 'fish', 'beef'],
+	'season':'spring',
+	'country':'Italy'
+}
+
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch skills.json
+vim skills.json
+{
+	"skills": ['Postman', 'API', 'Dev Tools', 'VPN', 'ADB', 'Основы SQL', 'Postgres', 'Redis', 'Jmeter', 'Python', 'XCode', 'Charles']
+
+}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json skills.json
+git commit -am 'add preferences.json and skills.json'
+git push
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+
+{
+  "ID":"01"
+  "Tittle": "Отсутствие кнопки "Добавить в избранное" на странице товара"
+  "STR": [ 
+  "1. Открыть сайт flowers.ru",
+  "2. Открыть страницу любого товара",
+  "3. Проскроллить до изображения товара" 
+  ],
+"Enviroment": ["MacOS 12.6", "Safari 16.0"],
+"Actual result": "Отображается кнопка "Добавить в избранное" ",
+"Expected result": "Кнопка "Добавить в избранное" отсутствует",
+"Severity": "Major",
+  "Priority": "High",
+        "Status": "Open",
+        "Author": "Марина",
+        "Sign to": "Михаил",
+        "Attachments": "аттач"  
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/my8may/XML.git
+ 23. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+ 24. Добавить файл под гит.
+git add .
+ 25. Закоммитить файл.
+git commit -am "add new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+<FIO>Korovina Marina Sergeevna</FIO>
+<age>21</age>
+<pets>0</pets>
+<food>melon, fish, beef</food>
+<futureSalary>5000</futureSalary>
+
+ 28. Отправить изменения на внешний репозиторий.
+git add . 
+git commit -am "add description new.xml"
+git push
+ 29. Создать файл preferences.xml
+touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+
+vim preferences.xml
+
+<film>Requiem for a Dream</film>
+<serial>Breaking Bad</serial>
+<food>melon, fish, beef</food>
+<season>spring</season>
+<country>Italy</country>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+touch skills.xml
+vim skills.xml
+
+<skills>Postman, API, Dev Tools, VPN, ADB, Основы SQL, Postgres, Redis, Jmeter, Python, XCode, Charles</skills>
+
+ 32. Сделать коммит в одну строку.
+git add preferences.xml  skills.xml
+git commit -am "add preferences and skills"
+git push
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+<ID>01</ID>
+<Tittle>Отсутствие кнопки "Добавить в избранное" на странице товара</Tittle>
+<STR>1. Открыть сайт flowers.ru,
+  2. Открыть страницу любого товара,
+  3. Проскроллить до изображения товара </STR>
+<Enviroment>MacOS 12.6, Safari 16.0</Enviroment>
+<ActualResult>Отображается кнопка "Добавить в избранное"</ActualResult>
+<ExpectedResult>Кнопка "Добавить в избранное" отсутствует</ExpectedResult>
+<Severity>Major</Severity>
+<Priority>High</Priority>
+<Status>Open</Status>
+<Author>Марина</Author>
+<SignTo>Михаил</SignTo>
+<Attachments>аттач</Attachments>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+Git pull
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+git clone https://github.com/my8may/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”.
+touch new.txt
+ 4. Добавить файл под гит.
+git add .
+ 5. Закоммитить файл.
+git commit -am "add new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+
+FIO - Korovina Marina Sergeevna
+age - 21
+pets - 0
+food - melon, fish, beef
+futureSalary -  5000 
+
+ 8. Отправить изменения на внешний репозиторий.
+git add . 
+git commit -am "add description new.txt"
+git push
+ 9. Создать файл preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+
+vim preferences.txt
+
+film - Requiem for a Dream
+serial - Breaking Bad
+food - melon, fish, beef
+season - spring
+country - Italy
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+touch skills.txt
+vim skills.txt
+skills - Postman, API, Dev Tools, VPN, ADB, Основы SQL, Postgres, Redis, Jmeter, Python, XCode, Charles
+ 12. Сделать коммит в одну строку.
+git add .
+git commit -am "add preferences and skills"
+git push
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+ 14. На веб интерфейсе создать файл bug_report.txt.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+ID - 01
+Tittle - Отсутствие кнопки "Добавить в избранное" на странице товара
+STR: 
+  1. Открыть сайт flowers.ru,
+  2. Открыть страницу любого товара,
+  3. Проскроллить до изображения товара 
+Enviroment - MacOS 12.6, Safari 16.0
+Actual result - Отображается кнопка "Добавить в избранное",
+Expected result - Кнопка "Добавить в избранное" отсутствует,
+Severity: Major
+Priority: High
+Status: Open
+Author: Марина
+Sign to: Михаил
+Attachments: "аттач"
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
